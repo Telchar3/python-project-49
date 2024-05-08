@@ -11,7 +11,7 @@ def brain_progression(name):
     result = ''
     our_number = 0
     rand_number = randint(1, 10)
-    rand_lengt = randint(5, 10)
+    rand_lengt = randint(6, 10)
     begin_number2 = begin_number + rand_step * rand_number
     step = rand_step * (rand_number - 1)
     for i in range(begin_number, begin_number + step, rand_step):
@@ -24,7 +24,9 @@ def brain_progression(name):
         rand_step
     ):
         result = result + str(i) + ' '
-    print(f'Question: {result}')
+    redact_result = result.strip()
+    print(f'Question: {redact_result}')
+    print(result)
     answer = prompt.string('Your answer: ')
     if answer == str(our_number):
         print('Correct!')
