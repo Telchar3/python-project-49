@@ -3,23 +3,19 @@ import prompt
 tried = 0
 
 
-def brain_nod(name):
+def brain_gcd(name):
     from random import randint
     global tried
     result = 1
     rand_num_one = randint(1, 100)
     rand_num_two = randint(1, 100)
-    if rand_num_one > rand_num_two:
-        for i in range(1, rand_num_two + 1):
-            if rand_num_two % i == 0 and rand_num_one % i == 0:
-                result = i
-    elif rand_num_one < rand_num_two:
-        for i in range(1, rand_num_one + 1):
-            if rand_num_two % i == 0 and rand_num_one % i == 0:
-                result = i
-    else:
-        result = rand_num_one
     print(f'Question: {rand_num_one} {rand_num_two}')
+    while rand_num_one != rand_num_two:
+        if rand_num_one > rand_num_two:
+            rand_num_one = rand_num_one - rand_num_two
+        else:
+            rand_num_two = rand_num_two - rand_num_one
+        result = rand_num_one
     answer = prompt.string('Your answer: ')
     if answer == str(result):
         print('Correct!')
@@ -36,7 +32,7 @@ def main():
     print(f'Hello, {name}')
     print('Find the greatest common divisor of given numbers.')
     while tried < 3:
-        brain_nod(name)
+        brain_gcd(name)
         if tried == 3:
             print(f'Congratulations, {name}!')
 
