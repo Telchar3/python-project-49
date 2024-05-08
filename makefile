@@ -13,6 +13,9 @@ brain-calc:
 brain-progression:
 	poetry run brain-progression
 
+brain-prime:
+	poetry run brain-prime
+
 build:
 	poetry build
 
@@ -28,4 +31,4 @@ package-reinstall:
 lint:
 	poetry run flake8 brain_games
 
-.PHONY: install brain-games build publish package-install
+.PHONY: lint install brain-games build publish package-install
