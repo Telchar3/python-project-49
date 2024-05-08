@@ -13,7 +13,7 @@ def logic(name):
         tried = tried + 1
     else:
         print(f"'{answer}' is wrong answer ;(. Correct answer was ' '")
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
         tried = 100
 
 

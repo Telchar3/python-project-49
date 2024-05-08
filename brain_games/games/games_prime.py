@@ -18,4 +18,4 @@ def brain_prime(name):
         print('Correct!')
     else:
         print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'")
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")

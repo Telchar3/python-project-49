@@ -12,7 +12,7 @@ def even_number(name):
         print('Correct!')
     elif random_number % 2 == 0:
         print(f"{answer} is wrong answer ;(. Correct answer was 'yes'")
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
     else:
         print(f"{answer} is wrong answer ;(. Correct answer was 'no'")
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")

@@ -35,7 +35,7 @@ def brain_progression(name):
             f"Correct answer was '{our_number}'"
         )
         print(error_message)
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
         tried = 100
 
 
