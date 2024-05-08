@@ -31,7 +31,7 @@ def main():
     print('Welcome to the Brain Games')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
-    print('What is the result on the expression?')
+    print('What is the result of the expression?')
     while tried < 3:
         brain_calc(name)
         if tried == 3:
