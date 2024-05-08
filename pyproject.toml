@@ -1,11 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "brain-games project for learning"
+repository = "https://github.com/Telchar3/python-project-49"
 authors = ["Bulat Dugarov <erdembulat03@gmail.com>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
+]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: Ubuntu",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Brain-games"
 ]
 
 [tool.poetry.dependencies]
